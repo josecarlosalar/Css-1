@@ -1,0 +1,26 @@
+{
+  "name": "css-basic",
+  "version": "1.0.0",
+  "description": "Ejercicios básicos de laboratorio css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josecarlosalar/Lemoncode-Css-Basic.git"
+  },
+  "keywords": [
+    "css",
+    "layout"
+  ],
+  "author": "José Carlos Alarcón Murillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josecarlosalar/Lemoncode-Css-Basic/issues"
+  },
+  "homepage": "https://github.com/josecarlosalar/Lemoncode-Css-Basic#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
