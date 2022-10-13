@@ -1,3 +1,45 @@
-h1 {
-    color: red;
+@import "variables";
+@while $index <=3 {
+    @if $index==1 {
+        $color_base: red;
+    }
+    @else if $index==2 {
+        $color_base: blue;
+    }
+    @else if $index==3 {
+        $color_base: green;
+    }
+    .container-#{$index} {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: $hight-base;
+        gap: 7px;
+        .box {
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: $width-base - 30;
+            background-color: $color_base;
+        }
+        .base-color {
+            width: $width-base;
+            opacity: 0.5;
+        }
+        .color-box-text {
+            color: white;
+        }
+        @while $var <=4 {
+            .darken-#{$var} {
+                opacity: $const;
+            }
+            .lighten-#{5 - $var} {
+                opacity: $const - 0.5;
+            }
+            $var: $var+1;
+            $const: $const+0.1;
+        }
+    }
+    $index: $index+1;
 }
