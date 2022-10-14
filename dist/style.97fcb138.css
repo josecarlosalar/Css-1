@@ -1,20 +1,19 @@
 .container-1 {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 90px;
-  gap: 7px;
+  display: flex;
+  height: 100px;
 }
 .container-1 .box {
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  border-radius: 5px;
+  width: 70%;
   background-color: red;
+  margin: 3px;
 }
 .container-1 .base-color {
-  width: 100px;
+  width: 100%;
   opacity: 0.5;
 }
 .container-1 .color-box-text {
@@ -46,22 +45,21 @@
 }
 
 .container-2 {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 90px;
-  gap: 7px;
+  display: flex;
+  height: 100px;
 }
 .container-2 .box {
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  border-radius: 5px;
+  width: 70%;
   background-color: blue;
+  margin: 3px;
 }
 .container-2 .base-color {
-  width: 100px;
+  width: 100%;
   opacity: 0.5;
 }
 .container-2 .color-box-text {
@@ -93,22 +91,21 @@
 }
 
 .container-3 {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 90px;
-  gap: 7px;
+  display: flex;
+  height: 100px;
 }
 .container-3 .box {
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  border-radius: 5px;
+  width: 70%;
   background-color: green;
+  margin: 3px;
 }
 .container-3 .base-color {
-  width: 100px;
+  width: 100%;
   opacity: 0.5;
 }
 .container-3 .color-box-text {
