@@ -1,43 +1,50 @@
 @import "variables";
 @while $index <=3 {
     @if $index==1 {
-        $color_base: red;
+        $color_base: rgb(242, 69, 62);
+        $color_font: rgb(78, 208, 180)
     }
     @else if $index==2 {
-        $color_base: blue;
+        $color_base: rgb(65, 84, 179);
+        $color_font: rgb(180, 160, 63)
     }
     @else if $index==3 {
-        $color_base: green;
+        $color_base: rgb(80, 174, 85);
+        $color_font: rgb(174, 80, 178)
     }
     .container-#{$index} {
         display: flex;
-        height: $height-base;
+        justify-content: center;
+        height: $height_base;
+        font-family: sans-serif;
+        font-size: 1.2rem;
         .box {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: 5px;
-            width: $width-base - 30;
+            width: $width_base - 30;
             background-color: $color_base;
-            margin: 3px;
+            margin: 5px;
         }
         .base-color {
-            width: $width-base;
-            opacity: 0.5;
-        }
-        .color-box-text {
+            width: $width_base;
+            background-color: $color_base;
             color: white;
+            ;
         }
         @while $var <=4 {
             .darken-#{$var} {
-                opacity: $const;
+                background-color: darken($color_base, $const);
+                color: $color_font;
             }
-            .lighten-#{5 - $var} {
-                opacity: $const - 0.5;
+            .lighten-#{$var} {
+                background-color: lighten($color_base, $const);
+                color: $color_font;
             }
             $var: $var+1;
-            $const: $const+0.1;
+            $const: $const+5;
         }
     }
     $index: $index+1;
